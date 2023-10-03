@@ -21,11 +21,16 @@
       "type": "uid",
       "targetField": "name"
     },
+    "description": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
     "short_description": {
       "type": "text"
-    },
-    "description": {
-      "type": "richtext"
     },
     "price": {
       "type": "decimal"

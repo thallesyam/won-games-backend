@@ -762,8 +762,15 @@ export interface ApiGameGame extends Schema.CollectionType {
   attributes: {
     name: Attribute.String & Attribute.Required & Attribute.Unique;
     slug: Attribute.UID<'api::game.game', 'name'>;
+    description: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'rich';
+        }
+      >;
     short_description: Attribute.Text;
-    description: Attribute.RichText;
     price: Attribute.Decimal;
     release_date: Attribute.Date;
     rating: Attribute.Enumeration<

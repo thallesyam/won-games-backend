@@ -7,15 +7,19 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "postinstall": "patch-package"
   },
   "devDependencies": {},
   "dependencies": {
+    "@ckeditor/strapi-plugin-ckeditor": "^0.0.9",
     "@strapi/plugin-graphql": "^4.14.0",
     "@strapi/plugin-i18n": "4.14.0",
     "@strapi/plugin-users-permissions": "4.14.0",
     "@strapi/strapi": "4.14.0",
-    "pg": "8.8.0"
+    "patch-package": "^8.0.0",
+    "pg": "8.8.0",
+    "postinstall": "^0.8.0"
   },
   "author": {
     "name": "A Strapi developer"
