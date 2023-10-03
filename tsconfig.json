@@ -1,6 +1,9 @@
 {
   "extends": "@strapi/typescript-utils/tsconfigs/server",
   "compilerOptions": {
+    "lib": [
+      "es2021"
+    ],
     "outDir": "dist",
     "rootDir": "."
   },
